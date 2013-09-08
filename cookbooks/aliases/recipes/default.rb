@@ -22,13 +22,6 @@ magic_shell_alias 'h' do
     command 'history'
 end
 
-# Alias cd_sites_enabled to cd to Apache's sites-enabled directory.
-magic_shell_alias 'cd_sites_enabled' do
-    # This doesn't work yet...node is nil?
-    #command "cd #{node['apache']['dir']}/sites-enabled"
-    command "cd /etc/apache2/sites-enabled"
-end
-
 # Set vim as the default editor.
 magic_shell_environment 'EDITOR' do
     value 'vim'
