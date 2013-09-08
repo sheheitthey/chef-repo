@@ -30,7 +30,7 @@ rm /tmp/encrypted_data_bag_secret
 <% end -%>
 
 <% if @config[:chef_node_name] %>
-[ `grep -qx "node_name \"<%= @config[:chef_node_name] %>\"" /etc/chef/client.rb` ] || echo "node_name \"<%= @config[:chef_node_name] %>\"" >> /etc/chef/client.rb
+[ `grep -qx "node_name \"<%= @config[:chef_node_name] %>\"" /etc/chef/client.rb` ] || echo -e "\n# Node name set by knife bootstrap.\nnode_name \"<%= @config[:chef_node_name] %>\"" >> /etc/chef/client.rb
 <% end -%>
 
 <% if knife_config[:bootstrap_proxy] %>
