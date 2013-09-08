@@ -1,6 +1,6 @@
 {
   "name": "chef-testclient",
-  "chef_environment": "_default",
+  "chef_environment": "test",
   "normal": {
     "tags": [
 
