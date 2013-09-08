@@ -11,8 +11,8 @@
     "recipe[chef-client::config]",
     "recipe[chef-client::delete_validation]",
     "recipe[chef-client]",
-    "recipe[hostname]",
     "recipe[autoetchosts]",
+    "recipe[hostname]",
     "recipe[aliases]"
   ],
   "env_run_lists": {
