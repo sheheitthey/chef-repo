@@ -22,7 +22,27 @@ magic_shell_alias 'h' do
     command 'history'
 end
 
+# Alias 'ls' to use some formatting defaults.
+magic_shell_alias 'ls' do
+    command 'ls -F --color=never'
+end
+
+# Alias 'screen' to use UTF-8 and a nicer $TERM by default.
+magic_shell_alias 'screen' do
+    command 'screen -U -T "${TERM}"'
+end
+
 # Set vim as the default editor.
 magic_shell_environment 'EDITOR' do
     value 'vim'
+end
+
+# Set RSX as default flags for less.
+magic_shell_environment 'LESS' do
+    value 'RSX'
+end
+
+# Set less as the default pager.
+magic_shell_environment 'PAGER' do
+    value 'less'
 end
