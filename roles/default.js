@@ -10,6 +10,7 @@
   "run_list": [
     "recipe[chef-client]",
     "recipe[chef-client::delete_validation]",
+    "recipe[hostname]",
     "recipe[aliases]"
   ],
   "env_run_lists": {

@@ -8,7 +8,8 @@
   "default_attributes": {
     "chef_client": {
       "interval": 60
-    }
+    },
+    "set_fqdn": "*.sheheitthey.com"
   },
   "override_attributes": {
   }
