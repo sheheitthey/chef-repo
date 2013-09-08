@@ -6,6 +6,9 @@
   "json_class": "Chef::Environment",
   "chef_type": "environment",
   "default_attributes": {
+    "chef_client": {
+      "interval": 60
+    }
   },
   "override_attributes": {
   }

@@ -8,6 +8,7 @@
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[chef-client]",
     "recipe[aliases]"
   ],
   "env_run_lists": {
