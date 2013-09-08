@@ -7,7 +7,10 @@
   "chef_type": "environment",
   "default_attributes": {
     "chef_client": {
-      "interval": 60
+      "interval": 60,
+      "config": {
+        "log_level": ":debug"
+      }
     },
     "set_fqdn": "*.sheheitthey.com"
   },

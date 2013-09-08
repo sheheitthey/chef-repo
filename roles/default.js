@@ -8,8 +8,9 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[chef-client]",
+    "recipe[chef-client::config]",
     "recipe[chef-client::delete_validation]",
+    "recipe[chef-client]",
     "recipe[hostname]",
     "recipe[aliases]"
   ],
