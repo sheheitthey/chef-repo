@@ -7,6 +7,7 @@
     ]
   },
   "run_list": [
-    "role[default]"
+    "role[default]",
+    "recipe[apache2]"
   ]
 }
