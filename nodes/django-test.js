@@ -4,9 +4,15 @@
   "normal": {
     "tags": [
 
-    ]
+    ],
+    "postgresql": {
+      "password": {
+         "postgres": "postgres_password"
+      }
+    }
   },
   "run_list": [
-    "role[default]"
+    "role[default]",
+    "recipe[postgresql::server]"
   ]
 }
