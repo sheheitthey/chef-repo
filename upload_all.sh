@@ -21,9 +21,7 @@ COOKBOOKS_GREP_EXCLUDE='README\.md'
 if [ "${UPLOAD_COOKBOOKS}" = '1' ]; then
     cookbooks=`$LS ${COOKBOOKS_DIR} | $GREP -Ev ${COOKBOOKS_GREP_EXCLUDE}`
 
-    for cookbook in $cookbooks; do
-        $KNIFE cookbook upload $cookbook
-    done
+    $KNIFE cookbook upload $cookbooks
 fi
 
 for js_object_type in $JS_OBJECT_TYPES; do
